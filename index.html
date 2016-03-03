@@ -1,0 +1,37 @@
+<head>
+    <title>Todo List</title>
+</head>
+
+<body>
+<div ng-controller="appController" ng-cloak="" class="md-inline-form">
+    <md-divider></md-divider>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2 class="md-flex">Spending list</h2>
+            <span flex></span>
+            <md-button data-ng-click="showAdd($event)" class="md-raised">Add</md-button>
+        </div>
+    </md-toolbar>
+    <md-content layout-padding="">
+        <md-list>
+            <md-list-item data-ng-repeat="expense in expenses">
+                <div layout-gt-sm="row">
+                    <md-datepicker flex-gt-sm ng-model="expense.date" md-placeholder="Date"></md-datepicker>
+                <!--<div flex="20" hide-xs hide-sm>-->
+                    <!--&lt;!&ndash; Spacer //&ndash;&gt;-->
+                <!--</div>-->
+                    <md-input-container class="md-block" flex="40">
+                        <label>Description</label>
+                        <input ng-model="expense.description">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="20">
+                        <label>Category</label>
+                        <input ng-model="expense.category">
+                    </md-input-container>
+                    <md-button data-ng-click="removeExpense(expense._id)" class="md-raised md-primary">Remove</md-button>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</div>
+</body>

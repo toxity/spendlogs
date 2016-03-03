@@ -1,0 +1,50 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="11">
+            <item index="0" class="java.lang.String" itemvalue="ng-model" />
+            <item index="1" class="java.lang.String" itemvalue="ng-class" />
+            <item index="2" class="java.lang.String" itemvalue="ng-repeat" />
+            <item index="3" class="java.lang.String" itemvalue="ng-click" />
+            <item index="4" class="java.lang.String" itemvalue="ng-controller" />
+            <item index="5" class="java.lang.String" itemvalue="layout" />
+            <item index="6" class="java.lang.String" itemvalue="ng-cloak" />
+            <item index="7" class="java.lang.String" itemvalue="layout-sm" />
+            <item index="8" class="java.lang.String" itemvalue="layout-align" />
+            <item index="9" class="java.lang.String" itemvalue="layout-gt-sm" />
+            <item index="10" class="java.lang.String" itemvalue="flex" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="16">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="md-content" />
+            <item index="7" class="java.lang.String" itemvalue="md-button" />
+            <item index="8" class="java.lang.String" itemvalue="md-input-container" />
+            <item index="9" class="java.lang.String" itemvalue="md-datepicker" />
+            <item index="10" class="java.lang.String" itemvalue="md-option" />
+            <item index="11" class="java.lang.String" itemvalue="md-select" />
+            <item index="12" class="java.lang.String" itemvalue="md-list-item" />
+            <item index="13" class="java.lang.String" itemvalue="md-list" />
+            <item index="14" class="java.lang.String" itemvalue="md-divider" />
+            <item index="15" class="java.lang.String" itemvalue="md-toolbar" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

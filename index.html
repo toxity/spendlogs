@@ -15,8 +15,8 @@
     <md-content layout-padding="">
         <md-list>
             <md-list-item data-ng-repeat="expense in expenses">
-                <div layout-gt-sm="row">
-                    <md-datepicker flex-gt-sm ng-model="expense.date" md-placeholder="Date"></md-datepicker>
+                <div layout="row" flex layout-align="start start">
+                    <md-datepicker flex="20" ng-model="expense.date" md-placeholder="Date"></md-datepicker>
                 <!--<div flex="20" hide-xs hide-sm>-->
                     <!--&lt;!&ndash; Spacer //&ndash;&gt;-->
                 <!--</div>-->

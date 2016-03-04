@@ -20,27 +20,27 @@ angular.module('app').controller('appController', ['$scope', '$meteor', '$mdDial
         };
 
 
-        $scope.showAdd = function(ev) {
+        $scope.showAdd = function($event) {
             $mdDialog.show({
                 controller: DialogController,
                 templateUrl: 'client/templates/modals/test.html',
                 parent: angular.element(document.body),
-                targetEvent: ev,
+                targetEvent: $event,
                 clickOutsideToClose:true,
                 fullscreen: false
             })
-                .then(function(answer) {
-                    $scope.status = 'You said the information was "' + answer + '".';
-                }, function() {
-                    $scope.status = 'You cancelled the dialog.';
-                });
+                //.then(function(answer) {
+                //    $scope.status = 'You said the information was "' + answer + '".';
+                //}, function() {
+                //    $scope.status = 'You cancelled the dialog.';
+                //})
+            ;
 
 
             function DialogController($scope, $meteor, $mdDialog) {
                 $scope.expenses = $meteor.collection(Expenses);
 
                 $scope.categories = ['Cat1', 'Cat2'];
-
 
                 $scope.addSpending = function (date, description, category) {
                     $meteor.call('addSpending', date, description, category);

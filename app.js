@@ -7,8 +7,8 @@ Meteor.methods({
     Expenses.insert({
       date: date,
       description: description,
-      category: category,
-      username: Meteor.user().username
+      category: category
+      //username: Meteor.user().username
     });
   },
 

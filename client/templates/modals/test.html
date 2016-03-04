@@ -4,29 +4,30 @@
             <div class="md-toolbar-tools">
                 <h2>Adding</h2>
                 <span flex></span>
-                <md-button class="md-icon-button" ng-click="cancel()">
-                    <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
-                </md-button>
+                <!--<md-button class="md-icon-button" ng-click="cancel()">-->
+                <!--<md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>-->
+                <!--</md-button>-->
             </div>
         </md-toolbar>
-        <md-dialog-actions layout="row">
+        <md-dialog-actions layout="row" flex layout-align="start start">
             <md-datepicker required ng-required="true" ng-model="date" md-placeholder="Enter date"></md-datepicker>
 
             <md-input-container class="md-block" flex="60">
-            <label>Description</label>
-            <input required ng-model="description">
+                <label>Description</label>
+                <input required ng-model="description">
             </md-input-container>
 
             <md-input-container class="md-block" flex="20">
-            <label>Select Category</label>
-            <md-select required ng-model="category">
-            <md-option ng-repeat="category in categories" value="{{category}}">
-            {{category}}
-            </md-option>
-            </md-select>
+                <label>Select Category</label>
+                <md-select required ng-model="category">
+                    <md-option ng-repeat="category in categories" value="{{category}}">
+                        {{category}}
+                    </md-option>
+                </md-select>
             </md-input-container>
 
-            <md-button ng-disabled="myForm.$invalid" type="submit" data-ng-click="" class="md-raised md-primary">Add</md-button>
+            <md-button ng-disabled="myForm.$invalid" type="submit" data-ng-click="" class="md-raised md-primary">Add
+            </md-button>
         </md-dialog-actions>
     </form>
 </md-dialog>
